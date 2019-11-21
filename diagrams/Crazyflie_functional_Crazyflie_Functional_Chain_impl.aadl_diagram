@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
-<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="3">
-  <element id="0" manual="true" autoContentsFilter="allow_all">
-    <element id="29" autoContentsFilter="allow_fundamental">
-      <element id="47" autoContentsFilter="allow_fundamental">
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="591d4bf6-4f11-4317-8dd9-07dcbe8c9589" manual="true">
+    <element uuid="07679a9c-c439-49cc-9244-791254001894" manual="true">
+      <element uuid="5c672722-fdc7-4979-ad08-b5ce2061858c" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -14,8 +14,8 @@
       </bo>
       <primaryLabelPosition x="-6.0" y="-20.0"/>
     </element>
-    <element id="30" autoContentsFilter="allow_fundamental">
-      <element id="46" autoContentsFilter="allow_fundamental">
+    <element uuid="41a57a8e-6c0c-4770-9d55-81ac6d733396" manual="true">
+      <element uuid="7adbceaf-f0ac-4d65-8ed9-b244dd19f7e1" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -27,8 +27,8 @@
       </bo>
       <primaryLabelPosition x="-6.0" y="-20.0"/>
     </element>
-    <element id="31" autoContentsFilter="allow_fundamental">
-      <element id="45" autoContentsFilter="allow_fundamental">
+    <element uuid="744e8772-597d-4d26-ad59-e34f94881ad4" manual="true">
+      <element uuid="b5f75e00-ec6a-4fb8-9d85-568866fe5b3a" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -40,8 +40,8 @@
       </bo>
       <primaryLabelPosition x="-6.0" y="-20.0"/>
     </element>
-    <element id="32" autoContentsFilter="allow_fundamental">
-      <element id="44" autoContentsFilter="allow_fundamental">
+    <element uuid="5a07b7c7-2224-4155-9aa4-87899737a1da" manual="true">
+      <element uuid="a16aaf48-7030-4dde-9cf1-a21973a31ed1" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -59,8 +59,8 @@
       </bendpoints>
       <primaryLabelPosition x="-6.0" y="-20.0"/>
     </element>
-    <element id="33" autoContentsFilter="allow_fundamental">
-      <element id="50" autoContentsFilter="allow_fundamental">
+    <element uuid="5fabf3e5-d1ff-4920-a2f9-89ce8f449465" manual="true">
+      <element uuid="71fd3947-3d53-4038-ba01-28b33115b4a4" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -72,8 +72,8 @@
       </bo>
       <primaryLabelPosition x="-6.0" y="-20.0"/>
     </element>
-    <element id="34" autoContentsFilter="allow_fundamental">
-      <element id="49" autoContentsFilter="allow_fundamental">
+    <element uuid="081e804c-8886-4b23-bfc2-4b0a39ec9e80" manual="true">
+      <element uuid="e788f610-7a56-42d3-b3bd-082a9a1c65f3" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -85,8 +85,8 @@
       </bo>
       <primaryLabelPosition x="-6.0" y="-20.0"/>
     </element>
-    <element id="35" autoContentsFilter="allow_fundamental">
-      <element id="48" autoContentsFilter="allow_fundamental">
+    <element uuid="8c74c0d4-ca70-4e07-be2c-7d15dd19022b" manual="true">
+      <element uuid="a2677a50-c325-4ed4-b0d5-9c2da6147d05" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -98,27 +98,27 @@
       </bo>
       <primaryLabelPosition x="-6.0" y="-20.0"/>
     </element>
-    <element id="40" autoContentsFilter="allow_fundamental">
+    <element uuid="1b77f052-e18e-4016-b99c-0e82c5348201" manual="true">
       <bo>
         <seg>realization</seg>
       </bo>
     </element>
-    <element id="1" manual="true" autoContentsFilter="allow_type">
-      <element id="2" manual="true" autoContentsFilter="allow_fundamental" dockArea="right">
+    <element uuid="31407de4-5653-4e23-8bf9-7a430dafa020" manual="true">
+      <element uuid="a3f57a27-3123-4811-9584-0bc0f994dc43" manual="true" dockArea="right">
         <bo>
           <seg>feature</seg>
           <seg>accelero_out</seg>
         </bo>
         <position x="129.0" y="30.0"/>
       </element>
-      <element id="3" autoContentsFilter="allow_fundamental">
+      <element uuid="77294dc2-0f72-42e3-9d34-6045462bdae3" manual="true">
         <bo>
           <seg>flow_specification</seg>
           <seg>f1</seg>
         </bo>
         <primaryLabelPosition x="5.0" y="10.0"/>
       </element>
-      <element id="38" autoContentsFilter="allow_fundamental">
+      <element uuid="2983568e-e87a-469c-b245-c2ddd0f29e22" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>sc_type</seg>
@@ -131,50 +131,50 @@
       <position x="20.0" y="20.0"/>
       <size width="232.0" height="71.0"/>
     </element>
-    <element id="19" manual="true" autoContentsFilter="allow_type">
-      <element id="20" manual="true" autoContentsFilter="allow_fundamental" dockArea="left">
+    <element uuid="6ed27507-e245-42b0-ae46-030b41b9852b" manual="true">
+      <element uuid="9220b8c4-546f-41fa-a5b3-c88bfe3f08b6" manual="true" dockArea="left">
         <bo>
           <seg>feature</seg>
           <seg>data_f_in</seg>
         </bo>
         <position y="20.0"/>
       </element>
-      <element id="21" manual="true" autoContentsFilter="allow_fundamental" dockArea="left">
+      <element uuid="3596a7c6-e5be-4e39-98d5-d88dd500589d" manual="true" dockArea="left">
         <bo>
           <seg>feature</seg>
           <seg>gyro_in</seg>
         </bo>
         <position y="71.0"/>
       </element>
-      <element id="22" manual="true" autoContentsFilter="allow_fundamental" dockArea="right">
+      <element uuid="3a31284a-446e-497e-83fe-de83046bd0e3" manual="true" dockArea="right">
         <bo>
           <seg>feature</seg>
           <seg>motor_out</seg>
         </bo>
-        <position x="287.0" y="20.0"/>
+        <position x="286.0" y="20.0"/>
       </element>
-      <element id="23" manual="true" autoContentsFilter="allow_fundamental" dockArea="right">
+      <element uuid="a4e003e5-7d26-42bc-b17a-7077127788f1" manual="true" dockArea="right">
         <bo>
           <seg>feature</seg>
           <seg>tc</seg>
         </bo>
-        <position x="335.0" y="71.0"/>
+        <position x="334.0" y="71.0"/>
       </element>
-      <element id="24" autoContentsFilter="allow_fundamental">
+      <element uuid="d01c674c-c5c2-4188-81a2-6dd4e8c972bf" manual="true">
         <bo>
           <seg>flow_specification</seg>
           <seg>f1</seg>
         </bo>
         <primaryLabelPosition x="5.0" y="10.0"/>
       </element>
-      <element id="25" autoContentsFilter="allow_fundamental">
+      <element uuid="10689135-4953-4810-b61c-f3d43713080c" manual="true">
         <bo>
           <seg>flow_specification</seg>
           <seg>f2</seg>
         </bo>
         <primaryLabelPosition x="5.0" y="10.0"/>
       </element>
-      <element id="43" autoContentsFilter="allow_fundamental">
+      <element uuid="f827452b-2c5c-4da2-a4a6-66a932d9aca4" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>sc_type</seg>
@@ -187,50 +187,50 @@
       <position x="790.0" y="74.0"/>
       <size width="370.0" height="122.0"/>
     </element>
-    <element id="12" manual="true" autoContentsFilter="allow_type">
-      <element id="13" manual="true" autoContentsFilter="allow_fundamental" dockArea="left">
+    <element uuid="fe1d0152-ab7f-49f4-8543-c8242a659e19" manual="true">
+      <element uuid="d4fa5fbb-6a0b-492c-8fed-e22635c2115e" manual="true" dockArea="left">
         <bo>
           <seg>feature</seg>
           <seg>accelero_in</seg>
         </bo>
         <position y="20.0"/>
       </element>
-      <element id="16" manual="true" autoContentsFilter="allow_fundamental" dockArea="right">
+      <element uuid="47af4ee6-b9eb-4f61-89d2-50aab36bb54a" manual="true" dockArea="right">
         <bo>
           <seg>feature</seg>
           <seg>data_f_out</seg>
         </bo>
         <position x="268.0" y="71.0"/>
       </element>
-      <element id="14" manual="true" autoContentsFilter="allow_fundamental" dockArea="left">
+      <element uuid="6ed635d2-9c53-49b3-8844-97bc26186f9b" manual="true" dockArea="left">
         <bo>
           <seg>feature</seg>
           <seg>gyro_in</seg>
         </bo>
         <position y="202.0"/>
       </element>
-      <element id="15" manual="true" autoContentsFilter="allow_fundamental" dockArea="left">
+      <element uuid="d366f269-ef5b-45af-9a46-83436be00c95" manual="true" dockArea="left">
         <bo>
           <seg>feature</seg>
           <seg>magneto_in</seg>
         </bo>
         <position y="122.0"/>
       </element>
-      <element id="17" autoContentsFilter="allow_fundamental">
+      <element uuid="45dbeb1c-e8c4-4ac1-82bf-470e7d44d134" manual="true">
         <bo>
           <seg>flow_specification</seg>
           <seg>f1</seg>
         </bo>
         <primaryLabelPosition x="5.0" y="10.0"/>
       </element>
-      <element id="18" autoContentsFilter="allow_fundamental">
+      <element uuid="71285d98-06a0-404a-9905-ba9f17107f5e" manual="true">
         <bo>
           <seg>flow_specification</seg>
           <seg>f2</seg>
         </bo>
         <primaryLabelPosition x="5.0" y="10.0"/>
       </element>
-      <element id="37" autoContentsFilter="allow_fundamental">
+      <element uuid="6724e681-5f96-4fd9-8aca-c047e3114166" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>sc_type</seg>
@@ -243,22 +243,22 @@
       <position x="340.0" y="28.0"/>
       <size width="359.0" height="244.0"/>
     </element>
-    <element id="4" manual="true" autoContentsFilter="allow_type">
-      <element id="5" manual="true" autoContentsFilter="allow_fundamental" dockArea="right">
+    <element uuid="37e6db1d-ee60-414d-b636-ed95fd6912ad" manual="true">
+      <element uuid="e94adc29-5add-4995-ab17-2d92b3d90bb2" manual="true" dockArea="right">
         <bo>
           <seg>feature</seg>
           <seg>gyro_out</seg>
         </bo>
-        <position x="153.0" y="29.0"/>
+        <position x="152.0" y="29.0"/>
       </element>
-      <element id="6" autoContentsFilter="allow_fundamental">
+      <element uuid="3fbd9470-124c-45d1-a0ed-de78b94ca8df" manual="true">
         <bo>
           <seg>flow_specification</seg>
           <seg>f1</seg>
         </bo>
         <primaryLabelPosition x="5.0" y="10.0"/>
       </element>
-      <element id="39" autoContentsFilter="allow_fundamental">
+      <element uuid="20c654cb-8ee4-42c3-b6de-e75c2a94a94a" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>sc_type</seg>
@@ -271,22 +271,22 @@
       <position x="22.0" y="198.0"/>
       <size width="230.0" height="71.0"/>
     </element>
-    <element id="7" manual="true" autoContentsFilter="allow_type">
-      <element id="8" manual="true" autoContentsFilter="allow_fundamental" dockArea="right">
+    <element uuid="dd1b109f-4235-44fc-9285-c44d35966acd" manual="true">
+      <element uuid="efc25190-f8c4-4e81-8f50-28b4a919a774" manual="true" dockArea="right">
         <bo>
           <seg>feature</seg>
           <seg>magneto_out</seg>
         </bo>
         <position x="126.0" y="38.0"/>
       </element>
-      <element id="9" autoContentsFilter="allow_fundamental">
+      <element uuid="fb263bca-7bae-47f9-95ae-79fe5b8e75e7" manual="true">
         <bo>
           <seg>flow_specification</seg>
           <seg>f1</seg>
         </bo>
         <primaryLabelPosition x="5.0" y="10.0"/>
       </element>
-      <element id="41" autoContentsFilter="allow_fundamental">
+      <element uuid="fa6b0373-2b6d-45cd-b292-a73ec2f19a3d" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>sc_type</seg>
@@ -297,24 +297,24 @@
         <seg>magneto</seg>
       </bo>
       <position x="22.0" y="114.0"/>
-      <size width="228.0" height="77.0"/>
+      <size width="228.0" height="78.0"/>
     </element>
-    <element id="26" manual="true" autoContentsFilter="allow_type">
-      <element id="27" manual="true" autoContentsFilter="allow_fundamental" dockArea="left">
+    <element uuid="c4749b8e-a27c-4915-92ae-49ec390b6390" manual="true">
+      <element uuid="1cbeb71c-0ad0-410f-9fbd-bfd0ce9ded03" manual="true" dockArea="left">
         <bo>
           <seg>feature</seg>
           <seg>motor_in</seg>
         </bo>
         <position y="20.0"/>
       </element>
-      <element id="28" autoContentsFilter="allow_fundamental">
+      <element uuid="e63727c7-45a7-4387-8545-d48de1fbf54f" manual="true">
         <bo>
           <seg>flow_specification</seg>
           <seg>f1</seg>
         </bo>
         <primaryLabelPosition x="5.0" y="10.0"/>
       </element>
-      <element id="36" autoContentsFilter="allow_fundamental">
+      <element uuid="9d405ed9-f779-4c98-9ce8-0bfbf51860e4" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>sc_type</seg>
@@ -327,15 +327,15 @@
       <position x="1250.0" y="60.0"/>
       <size width="216.0" height="71.0"/>
     </element>
-    <element id="10" manual="true" autoContentsFilter="allow_type">
-      <element id="11" manual="true" autoContentsFilter="allow_fundamental" dockArea="left">
+    <element uuid="3377ca57-83aa-40c7-b11b-5ebf589c29a2" manual="true">
+      <element uuid="8096da3a-bb72-4914-b2d0-c8af097eecde" manual="true" dockArea="left">
         <bo>
           <seg>feature</seg>
           <seg>order</seg>
         </bo>
         <position y="20.0"/>
       </element>
-      <element id="42" autoContentsFilter="allow_fundamental">
+      <element uuid="fc024132-ea81-4daf-abac-e752edfc5a1e" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>sc_type</seg>
@@ -355,7 +355,7 @@
     <position x="20.0" y="20.0"/>
     <size width="1511.0" height="331.0"/>
   </element>
-  <config>
+  <config type="structure">
     <enabledAadlProperties>
       <property>deployment_properties::allowed_memory_binding</property>
       <property>deployment_properties::actual_function_binding</property>
