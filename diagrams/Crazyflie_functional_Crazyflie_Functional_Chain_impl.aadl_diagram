@@ -151,14 +151,14 @@
           <seg>feature</seg>
           <seg>motor_out</seg>
         </bo>
-        <position x="286.0" y="20.0"/>
+        <position x="287.0" y="20.0"/>
       </element>
       <element uuid="a4e003e5-7d26-42bc-b17a-7077127788f1" manual="true" dockArea="right">
         <bo>
           <seg>feature</seg>
           <seg>tc</seg>
         </bo>
-        <position x="334.0" y="71.0"/>
+        <position x="335.0" y="71.0"/>
       </element>
       <element uuid="d01c674c-c5c2-4188-81a2-6dd4e8c972bf" manual="true">
         <bo>
@@ -249,7 +249,7 @@
           <seg>feature</seg>
           <seg>gyro_out</seg>
         </bo>
-        <position x="152.0" y="29.0"/>
+        <position x="153.0" y="29.0"/>
       </element>
       <element uuid="3fbd9470-124c-45d1-a0ed-de78b94ca8df" manual="true">
         <bo>

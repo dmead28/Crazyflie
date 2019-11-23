@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="ASCII"?>
 <instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" name="Crazyflie_System_impl_Instance" category="system">
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="platform:/plugin/cheddar-osate2-properties/resources/properties/Cheddar_Transformation_Properties.aadl#Cheddar_Transformation_Properties.Exported_Attribute_Time_Units"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:NamedValue">
+        <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/cheddar-osate2-properties/resources/properties/Cheddar_Transformation_Properties.aadl#/0/@ownedPropertyType.1/@ownedLiteral.0"/>
+      </ownedValue>
+    </ownedValue>
+    <propertyAssociation href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.4"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="platform:/plugin/cheddar-osate2-properties/resources/properties/Cheddar_Transformation_Properties.aadl#Cheddar_Transformation_Properties.Transform_Sporadic_To_Periodic"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:BooleanLiteral" value="true"/>
+    </ownedValue>
+    <propertyAssociation href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.5"/>
+  </ownedPropertyAssociation>
   <componentInstance name="UART" category="bus">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="../../library/bus_properties.aadl#Bus_Properties.Available_Bandwidth"/>

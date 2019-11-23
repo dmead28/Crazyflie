@@ -96,7 +96,7 @@ public
 	Order : out data port;
   -- Doug Mead begin of addition for question Q3
   flows
-  	f1 : flow source Order {latency => 100 us .. 300 us; };
+  	f1 : flow source Order {latency => 20 ms .. 40 ms; };
   -- Doug Mead begin of addition for question Q3
   end Pilot;
 
