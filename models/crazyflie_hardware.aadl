@@ -81,6 +81,10 @@ public
     Processor_Properties::PRocessor_Frequency => 168hz;
     --  XXX memory components ?
   end nRF51822;
+  
+-- Doug Mead begin of addition for question Q8
+  device 
+-- Doug Mead end of addition for question Q8
 
   -------------
   -- MPU9250 --
