@@ -142,6 +142,30 @@ public
   properties
     Dispatch_Protocol => Periodic;
     Period => 4 ms; --  250 Hz
+    
+  -- Doug Mead begin of addition for question Q13
+	annex EMV2 {**
+	use types Crazyflie_Errors;
+	use behavior Crazyflie_Errors::simple;
+	
+	error propagations
+		Accelero_In : in propagation {ValueError};
+		Gyro_In : in propagation {ValueError};
+		Accelero_In : in propagation {ValueError};
+		Magneto_In : out propagation {ValueError};
+	flows
+		f1 : error path Accelero_In -> Data_F_Out;
+	end propagations;
+	
+	component error behavior
+		transitions
+		t1 : Operational -[TBD
+		]-> Failed;
+	propagations
+		Failed -[]-> Data_F_Out{ValueError};
+	end component;
+	**};
+  -- Doug Mead end of addition for question Q13
   end Sensor_Fusion;
 
   abstract Controller
