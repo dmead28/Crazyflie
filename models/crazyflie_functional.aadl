@@ -23,7 +23,7 @@ public
     properties
     	EMV2::OccurrenceDistribution => [ ProbabilityValue => 1.0e-9 ;
  										Distribution => Poisson;] applies to Failed;
- 		EMV2::severity => 1 applies to Failed;
+ 		EMV2::severity => 2 applies to Failed;
 		EMV2::likelihood => C applies to Failed;
 		EMV2::hazards =>
 		([ crossreference => "";
@@ -54,7 +54,7 @@ public
     properties
     	EMV2::OccurrenceDistribution => [ ProbabilityValue => 1.0e-9 ;
  										Distribution => Poisson;] applies to Failed;
- 		EMV2::severity => 1 applies to Failed;
+ 		EMV2::severity => 2 applies to Failed;
 		EMV2::likelihood => C applies to Failed;
 		EMV2::hazards =>
 		([ crossreference => "";
@@ -85,7 +85,7 @@ public
     properties
     	EMV2::OccurrenceDistribution => [ ProbabilityValue => 1.0e-9 ;
  										Distribution => Poisson;] applies to Failed;
- 		EMV2::severity => 1 applies to Failed;
+ 		EMV2::severity => 2 applies to Failed;
 		EMV2::likelihood => C applies to Failed;
 		EMV2::hazards =>
 		([ crossreference => "";
@@ -112,6 +112,25 @@ public
   properties
     Dispatch_Protocol => Periodic;
     Period => 4 ms; --  250 Hz
+  -- Doug Mead begin of addition for question Q9
+  annex emv2 {**
+    use types Crazyflie_Errors;
+    use behavior Crazyflie_Errors::simple;
+    
+    properties
+    	EMV2::OccurrenceDistribution => [ ProbabilityValue => 1.0e-9 ;
+ 										Distribution => Poisson;] applies to Failed;
+ 		EMV2::severity => 2 applies to Failed;
+		EMV2::likelihood => C applies to Failed;
+		EMV2::hazards =>
+		([ crossreference => "";
+		failure => "Loss of ALL sensor readings";
+		phases => ("all");
+		description => "Sensor_Fusion failure";
+		comment => "May be critical as no redundancy on UAV";
+		]) applies to Failed;
+  **};
+  -- Doug Mead end of addition for question Q9
   end Sensor_Fusion;
 
   abstract Controller
@@ -139,7 +158,7 @@ public
 		EMV2::likelihood => C applies to Failed;
 		EMV2::hazards =>
 		([ crossreference => "";
-		failure => "Loss of ALL sensor readings";
+		failure => "Loss of controller";
 		phases => ("all");
 		description => "Controller failure";
 		comment => "May be critical as no redundancy on UAV";
