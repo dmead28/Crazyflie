@@ -1,0 +1,6 @@
+Fault Impact of System Internal Error Sources
+
+Component, Initial Failure Mode, 1st Level Effect, Failure Mode, second Level Effect, Failure Mode, third Level Effect, Failure Mode, 4th Level Effect, Failure Mode, 5th Level Effect, Failure Mode, 6th Level Effect, Failure Mode, 7th Level Effect, More
+Acc,"{ValueError}",{ValueError} Accelero_Out -> Fusion:Accelero_In, Fusion {ValueError},{ValueError} Fusion.Data_F_Out -> Controller.Data_F_In[No In Propagation],,
+Gyro,"{ValueError}",{ValueError} Gyro_Out -> Fusion:Gyro_In, Fusion {ValueError},{ValueError} Fusion.Data_F_Out -> Controller.Data_F_In[No In Propagation],,
+Magneto,"{ValueError}",{ValueError} Magneto_Out -> Fusion:Magneto_In, Fusion {ValueError},{ValueError} Fusion.Data_F_Out -> Controller.Data_F_In[No In Propagation],,
