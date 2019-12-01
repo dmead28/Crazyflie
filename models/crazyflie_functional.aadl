@@ -161,9 +161,9 @@ public
 	
 	component error behavior
 		transitions
-		t1 : Operational -[ Accelero_In{ValueError} ]-> Failed;
-		t2 : Operational -[ Gyro_In{ValueError} ]-> Failed;
-		t3 : Operational -[ Magneto_In{ValueError} ]-> Failed;
+		t1 : Operational -[ Accelero_In ]-> Failed;
+		t2 : Operational -[ Gyro_In ]-> Failed;
+		t3 : Operational -[ Magneto_In ]-> Failed;
 		
 	propagations
 		Failed -[]-> Data_F_Out{ValueError};
