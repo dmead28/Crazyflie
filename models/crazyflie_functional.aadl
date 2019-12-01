@@ -20,6 +20,16 @@ public
     use types Crazyflie_Errors;
     use behavior Crazyflie_Errors::simple;
     
+  -- Doug Mead begin of addition for question Q12
+    error propagations
+		-- outgoing error propagation
+		Accelero_out: out propagation {ValueError};
+    flows
+		--When the sensor fails, its error is propagated through port Accelero_Out
+		ErrorSource: error source Accelero_out {ValueError} when {ValueError};
+	end propagations;
+  -- Doug Mead end of addition for question Q12
+    
     properties
     	EMV2::OccurrenceDistribution => [ ProbabilityValue => 1.0e-9 ;
  										Distribution => Poisson;] applies to Failed;
@@ -51,6 +61,16 @@ public
     use types Crazyflie_Errors;
     use behavior Crazyflie_Errors::simple;
     
+  -- Doug Mead begin of addition for question Q12
+    error propagations
+		-- outgoing error propagation
+		Gyro_Out: out propagation {ValueError};
+    flows
+		--When the sensor fails, its error is propagated through port Accelero_Out
+		ErrorSource: error source Gyro_Out {ValueError} when {ValueError};
+	end propagations;
+  -- Doug Mead end of addition for question Q12
+    
     properties
     	EMV2::OccurrenceDistribution => [ ProbabilityValue => 1.0e-9 ;
  										Distribution => Poisson;] applies to Failed;
@@ -81,6 +101,16 @@ public
   annex emv2 {**
     use types Crazyflie_Errors;
     use behavior Crazyflie_Errors::simple;
+    
+  -- Doug Mead begin of addition for question Q12
+    error propagations
+		-- outgoing error propagation
+		Magneto_Out: out propagation {ValueError};
+    flows
+		--When the sensor fails, its error is propagated through port Accelero_Out
+		ErrorSource: error source Magneto_Out {ValueError} when {ValueError};
+	end propagations;
+  -- Doug Mead end of addition for question Q12
     
     properties
     	EMV2::OccurrenceDistribution => [ ProbabilityValue => 1.0e-9 ;
