@@ -15,6 +15,25 @@ public
   properties
     Dispatch_Protocol => Periodic;
     Period => 4 ms; --  250 Hz
+  -- Doug Mead begin of addition for question Q9
+  annex emv2 {**
+    use types Crazyflie_Errors;
+    use behavior Crazyflie_Errors::simple;
+    
+    properties
+    	EMV2::OccurrenceDistribution => [ ProbabilityValue => 1.0e-9 ;
+ 										Distribution => Poisson;] applies to Failed;
+ 		EMV2::severity => 1 applies to Failed;
+		EMV2::likelihood => C applies to Failed;
+		EMV2::hazards =>
+		([ crossreference => "";
+		failure => "Loss of sensor readings";
+		phases => ("all");
+		description => "Accelero failure";
+		comment => "May be critical as no redundancy on UAV";
+		]) applies to Failed;
+  **};
+  -- Doug Mead end of addition for question Q9
   end Accelero;
 
   abstract Gyro
@@ -27,6 +46,25 @@ public
   properties
     Dispatch_Protocol => Periodic;
     Period => 4 ms; --  250 Hz
+  -- Doug Mead begin of addition for question Q9
+  annex emv2 {**
+    use types Crazyflie_Errors;
+    use behavior Crazyflie_Errors::simple;
+    
+    properties
+    	EMV2::OccurrenceDistribution => [ ProbabilityValue => 1.0e-9 ;
+ 										Distribution => Poisson;] applies to Failed;
+ 		EMV2::severity => 1 applies to Failed;
+		EMV2::likelihood => C applies to Failed;
+		EMV2::hazards =>
+		([ crossreference => "";
+		failure => "Loss of sensor readings";
+		phases => ("all");
+		description => "Gyro failure";
+		comment => "May be critical as no redundancy on UAV";
+		]) applies to Failed;
+  **};
+  -- Doug Mead end of addition for question Q9
   end Gyro;
 
   abstract Magneto
@@ -39,6 +77,25 @@ public
   properties
     Dispatch_Protocol => Periodic;
     Period => 4 ms; --  250 Hz
+  -- Doug Mead begin of addition for question Q9
+  annex emv2 {**
+    use types Crazyflie_Errors;
+    use behavior Crazyflie_Errors::simple;
+    
+    properties
+    	EMV2::OccurrenceDistribution => [ ProbabilityValue => 1.0e-9 ;
+ 										Distribution => Poisson;] applies to Failed;
+ 		EMV2::severity => 1 applies to Failed;
+		EMV2::likelihood => C applies to Failed;
+		EMV2::hazards =>
+		([ crossreference => "";
+		failure => "Loss of sensor readings";
+		phases => ("all");
+		description => "Magneto failure";
+		comment => "May be critical as no redundancy on UAV";
+		]) applies to Failed;
+  **};
+  -- Doug Mead end of addition for question Q9
   end Magneto;
 
   abstract Sensor_Fusion
@@ -70,6 +127,25 @@ public
   properties
     Dispatch_Protocol => Periodic;
     Period => 2 ms; --  500 Hz
+  -- Doug Mead begin of addition for question Q9
+  annex emv2 {**
+    use types Crazyflie_Errors;
+    use behavior Crazyflie_Errors::simple;
+    
+    properties
+    	EMV2::OccurrenceDistribution => [ ProbabilityValue => 1.0e-9 ;
+ 										Distribution => Poisson;] applies to Failed;
+ 		EMV2::severity => 1 applies to Failed;
+		EMV2::likelihood => C applies to Failed;
+		EMV2::hazards =>
+		([ crossreference => "";
+		failure => "Loss of ALL sensor readings";
+		phases => ("all");
+		description => "Controller failure";
+		comment => "May be critical as no redundancy on UAV";
+		]) applies to Failed;
+  **};
+  -- Doug Mead end of addition for question Q9
   end Controller;
 
   abstract Motors
@@ -83,6 +159,25 @@ public
 --    Dispatch_Protocol => Aperiodic;
     Dispatch_Protocol => Periodic;
     Period => 2ms;
+  -- Doug Mead begin of addition for question Q9
+  annex emv2 {**
+    use types Crazyflie_Errors;
+    use behavior Crazyflie_Errors::simple;
+    
+    properties
+    	EMV2::OccurrenceDistribution => [ ProbabilityValue => 1.0e-9 ;
+ 										Distribution => Poisson;] applies to Failed;
+ 		EMV2::severity => 1 applies to Failed;
+		EMV2::likelihood => C applies to Failed;
+		EMV2::hazards =>
+		([ crossreference => "";
+		failure => "Loss of motors";
+		phases => ("all");
+		description => "Motors failure";
+		comment => "Critical failure. Cannot fly without motors";
+		]) applies to Failed;
+  **};
+  -- Doug Mead end of addition for question Q9
   end Motors;
 
   abstract Pilot
