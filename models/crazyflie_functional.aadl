@@ -151,16 +151,20 @@ public
 	error propagations
 		Accelero_In : in propagation {ValueError};
 		Gyro_In : in propagation {ValueError};
-		Accelero_In : in propagation {ValueError};
-		Magneto_In : out propagation {ValueError};
+		Magneto_In : in propagation {ValueError};
+		Data_F_Out : out propagation {ValueError};
 	flows
 		f1 : error path Accelero_In -> Data_F_Out;
+		f2 : error path Gyro_In -> Data_F_Out;
+		f3 : error path Magneto_In -> Data_F_Out;
 	end propagations;
 	
 	component error behavior
 		transitions
-		t1 : Operational -[TBD
-		]-> Failed;
+		t1 : Operational -[ Accelero_In{ValueError} ]-> Failed;
+		t2 : Operational -[ Gyro_In{ValueError} ]-> Failed;
+		t3 : Operational -[ Magneto_In{ValueError} ]-> Failed;
+		
 	propagations
 		Failed -[]-> Data_F_Out{ValueError};
 	end component;
