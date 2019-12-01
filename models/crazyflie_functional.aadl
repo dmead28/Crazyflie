@@ -185,6 +185,31 @@ public
   properties
     Dispatch_Protocol => Periodic;
     Period => 2 ms; --  500 Hz
+    
+  -- Doug Mead begin of addition for question Q16
+	annex EMV2 {**
+	use types Crazyflie_Errors;
+	use behavior Crazyflie_Errors::simple;
+	
+	error propagations
+		Data_F_In : in propagation {ValueError};
+		Gyro_In : in propagation {ValueError};
+		Motor_Out : out propagation {ValueError};
+	flows
+		f1 : error path Data_F_In -> Motor_Out;
+		f2 : error path Gyro_In -> Motor_Out;
+	end propagations;
+	
+	component error behavior
+		transitions
+		t1 : Operational -[ Data_F_In ]-> Failed;
+		t2 : Operational -[ Gyro_In ]-> Failed;
+		
+	propagations
+		Failed -[]-> Motor_Out{ValueError};
+	end component;
+	**};
+  -- Doug Mead end of addition for question Q16
   end Controller;
 
   abstract Motors
@@ -202,6 +227,19 @@ public
   annex emv2 {**
     use types Crazyflie_Errors;
     use behavior Crazyflie_Errors::simple;
+    
+  -- Doug Mead begin of addition for question Q16
+    error propagations
+		Motor_In : in propagation {ValueError};
+	flows
+		f1 : error sink Motor_In;
+	end propagations;
+	
+	component error behavior
+		transitions
+		t1 : Operational -[ Motor_In ]-> Failed;
+	end component;
+  -- Doug Mead end of addition for question Q16
     
     properties
     	EMV2::OccurrenceDistribution => [ ProbabilityValue => 1.0e-9 ;
