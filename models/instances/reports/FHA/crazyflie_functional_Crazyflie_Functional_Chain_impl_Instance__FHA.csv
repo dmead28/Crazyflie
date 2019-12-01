@@ -2,6 +2,4 @@ Component, Error Model Element, Hazard Title, Description, Crossreference, Failu
 Acc, "Failed on Failed", , "Accelero failure", "", "Loss of sensor readings", , "all", , , , , 2, C, , , , , , , "May be critical as no redundancy on UAV"
 Gyro, "Failed on Failed", , "Gyro failure", "", "Loss of sensor readings", , "all", , , , , 2, C, , , , , , , "May be critical as no redundancy on UAV"
 Magneto, "Failed on Failed", , "Magneto failure", "", "Loss of sensor readings", , "all", , , , , 2, C, , , , , , , "May be critical as no redundancy on UAV"
-Fusion, "Failed on Failed", , "Sensor_Fusion failure", "", "Loss of ALL sensor readings", , "all", , , , , 2, C, , , , , , , "May be critical as no redundancy on UAV"
-Controller, "Failed on Failed", , "Controller failure", "", "Loss of controller", , "all", , , , , 1, C, , , , , , , "May be critical as no redundancy on UAV"
 Motors, "Failed on Failed", , "Motors failure", "", "Loss of motors", , "all", , , , , 1, C, , , , , , , "Critical failure. Cannot fly without motors"
