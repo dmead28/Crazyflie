@@ -32,6 +32,7 @@
     <semanticResources>platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/properties/EMV2.aadl</semanticResources>
     <semanticResources>models/instances/crazyflie_functional_Crazyflie_Functional_Chain_impl_Instance.aaxl2</semanticResources>
     <semanticResources>models/instances/reports/fta/crazyflie_functional_crazyflie_functional_chain_impl-failed_tree.faulttree</semanticResources>
+    <semanticResources>platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_io_AYBR0Eeq969Ar_Ce5tg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.osate.aadl2.errormodel.faulttree.design/description/faulttree.odesign#//@ownedViewpoints[name='FaultTree']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_iqrpgBR0Eeq969Ar_Ce5tg" name="crazyflie_functional_crazyflie_functional_chain_impl-failed_tree FaultTreeTable" repPath="#_iqIP4BR0Eeq969Ar_Ce5tg">
